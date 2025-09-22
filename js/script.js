@@ -91,6 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
             spaceBetween: 30,
           },
         },
+        on: {
+          init: function(swiper) {
+            if(swiper.slides.length < 3) {
+            
+              swiper.params.centeredSlides = true;
+              productionsThumbsSliderNext[i].classList.add('hidden');
+              productionsThumbsSliderPrev[i].classList.add('hidden');
+            }
+          }
+        }
       });
       
       const productionsGallerySwiper = new Swiper(productionsGallerySlider[i], {

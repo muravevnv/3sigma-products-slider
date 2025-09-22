@@ -402,6 +402,10 @@ body {
       width: 220px;
     }
 
+    &-slider {
+      width: 100%;
+    }
+
     &-btn {
       width: 16px;
       height: 16px;
@@ -416,6 +420,10 @@ body {
       color: #FFFFFF;
       cursor: pointer;
       transition: 0.25s ease-in-out;
+
+      &.hidden {
+        display: none;
+      }
 
       @media(max-width: 1023.98px) {
         display: none;
